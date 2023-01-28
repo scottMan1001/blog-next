@@ -32,17 +32,17 @@ foo.call({ id: 42 });
 
 上面代码中，setTimeout 的参数是一个箭头函数，这个箭头函数的定义生效是在 foo 函数生成时，而它的真正执行要等到 100 毫秒后。如果是普通函数，执行时 this 应该指向全局对象 window，这时应该输出 21。但是，箭头函数导致 this 总是指向函数定义生效时所在的对象（本例是{id: 42}），所以输出的是 42。
 
-## 闭包
+### 闭包
 
 函数和对其周围状态（lexical environment，词法环境）的引用捆绑在一起构成闭包（closure）。也就是说，闭包可以让你从内部函数访问外部函数作用域。在 JavaScript 中，每当函数被创建，就会在函数生成时生成闭包。
 
-```
+```javascript
 function makeFunc() {
-    var name = "Mozilla";
-    function displayName() {
-        alert(name);
-    }
-    return displayName;
+  var name = "Mozilla";
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
 }
 
 var myFunc = makeFunc();
