@@ -1,2 +1,5 @@
 # blog-next
-## 个人博客
+
+[详情](https://scottman1001.github.io/)
+
+
