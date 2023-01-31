@@ -625,8 +625,8 @@ gitalk:
   enable: true
   github_id: scottMan1001 # GitHub repo owner
   repo: scottMan1001.github.io # Repository name to store issues
-  client_id: 0d1ccd83b868743643b6 # GitHub Application Client ID
-  client_secret: 303171a8d4303f4dbc39d1d771018637544f0829 # GitHub Application Client Secret
+  client_id: # GitHub Application Client ID
+  client_secret: # GitHub Application Client Secret
   admin_user: scottMan1001 # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   proxy: /github/login/oauth/access_token
