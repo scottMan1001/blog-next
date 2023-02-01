@@ -18,7 +18,7 @@ ln -s /etc/nginx/sites-available/blog.conf /etc/nginx/sites-enabled/
 
 我的小程序的前端请求中加入了/api，但是我的后台服务接口并没有以/api 开头。
 
-最终在参考了 [zhengaoly 的简书文章](https://www.runoob.com)，进行了修改：
+最终在参考了 [zhengaoly 的简书文章](https://www.jianshu.com/p/fc91f00016e4)，进行了修改：
 
 ```nginx
 
